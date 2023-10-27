@@ -4,7 +4,7 @@ import Slider from "./Slider/Slider";
 
 const Blog = () => {
     return (
-        <div>
+        <div >
             <Slider></Slider>
             <FindBlog></FindBlog>
         </div>

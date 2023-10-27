@@ -3,7 +3,7 @@ import AvaiableLawyer from "../Appointment/AvaiableLawyer/AvaiableLawyer";
 
 const BookMark = () => {
     return (
-        <div className="m-10">
+        <div >
             <AvaiableLawyer></AvaiableLawyer>
         </div>
     );

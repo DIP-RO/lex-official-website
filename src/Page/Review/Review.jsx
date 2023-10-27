@@ -2,7 +2,7 @@
 
 const Review = () => {
     return (
-        <div className='grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 lg:gap-6 m-10'>
+        <div className='grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 lg:gap-6 lg:m-10'>
             <div className="card w-96 bg-gray-900 shadow-xl">
                 <div className="card-body">
                     <h2 className="card-title text-white">Dilruba Khan</h2>

@@ -1,11 +1,13 @@
 import AvaiableLawyer from "../Appointment/AvaiableLawyer/AvaiableLawyer";
 
 const Booking = () => {
-    return (
-        <div className="m-10">
+   
+    
+  return (
+    <div>
             <AvaiableLawyer></AvaiableLawyer>
         </div>
-    );
+  );
 };
 
 export default Booking;

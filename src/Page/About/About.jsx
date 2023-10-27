@@ -1,4 +1,5 @@
 import Whylex from '../../Component/Whylex/Whylex';
+import Others from './others';
 import OurTeam from './OurTeam/OurTeam';
 const About = () => {
     return (
@@ -14,7 +15,7 @@ const About = () => {
             <Whylex></Whylex>
 
             <OurTeam></OurTeam>
-
+            <Others />
         </div>
     );
 };
