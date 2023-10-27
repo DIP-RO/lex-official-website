@@ -39,7 +39,9 @@ const Service = () => {
         },
     ]
     return (
-        <div className=" lg:my-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-2 lg:gap-5 sm:max-w-sm sm:mx-2 sm:gap-2 sm:mt-3">
+        <div className="sm:max-w-sm sm:mx-2 sm:mt-3">
+            <h1 className="text-xl font-bold text-black sm:ml-10 sm:text-start lg:text-center mb-5">Our Services:</h1>
+            <div className=" lg:my-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-2 lg:gap-5  sm:gap-2 ">
             {service.map((service) => (
                 <div key={service.id} className="">
                     <div className="flex relative">
@@ -58,6 +60,7 @@ const Service = () => {
                     </div>
                 </div>
             ))}
+        </div>
         </div>
     );
 };
