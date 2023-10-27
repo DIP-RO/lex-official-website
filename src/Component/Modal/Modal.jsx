@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Modal = () => {
@@ -7,7 +8,11 @@ const Modal = () => {
                 <form method="dialog">
                     {/* if there is a button in form, it will close the modal */}
                     <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-white">✕</button>
+                   
                 </form>
+               <Link to="/Lex-ai">
+               <button className="btn btn-sm btn-circle btn-ghost absolute left-2 top-2 text-white"><img src="https://i.ibb.co/ydRtYXH/fullscreen.png" /></button>
+               </Link>
                 <div className="text-4xl font-['Inter'] font-semibold text-white p-5 text-center">
                     Welcome to LEX-AI
                 </div>

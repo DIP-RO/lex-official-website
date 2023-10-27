@@ -21,11 +21,11 @@ const Packages = () => {
     return (
         <div className="flex flex-col w-full bg-[#1d344a]">
             <h1 className="text-center text-5xl font-['Open_Sans'] font-bold text-white mt-10 ">PACKAGES</h1>
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-3 lg:gap-6 sm:gap-2 mt-10 lg:mx-5">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-3 lg:gap-6 sm:gap-2 mt-10 lg:mx-5 p-2">
                 {Packages.map((data) => (
                     <div
                         key={data.id}
-                        className="bg-[#744949] flex flex-col sm:p-3 gap-20 lg:h-[350px] sm:fit w-full items-center lg:py-12 rounded-[29px]  mb-5 "
+                        className="bg-[#744949] flex flex-col sm:p-3 sm:gap-5 lg:gap-20   lg:h-[350px] sm:h-fit w-full items-center lg:py-12 rounded-[29px]  mb-12 "
                     >
                         <img src={data.images} className="lg:w-24 sm:w-16" />
                         <h1 className="lg:text-5xl sm:text-lg font-['Open_Sans'] font-bold text-white  text-center  sm:mb-5">
