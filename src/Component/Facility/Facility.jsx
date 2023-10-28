@@ -4,7 +4,7 @@ const Facility = () => {
     return (
         <div
             id="DivmyRoot"
-            className="bg-[#1d344a] flex flex-col gap-24 w-full h-[478px] items-center px-[206px] py-12 sm:hidden"
+            className="bg-[#1d344a] flex flex-col lg:gap-24 w-full h-[478px]  items-center lg:px-[206px] py-12 sm:hidden"
         >
             <div
                 id="HeadingOurFacilites"
@@ -12,7 +12,7 @@ const Facility = () => {
             >
                 Our Facilites
             </div>
-            <div className="self-stretch flex flex-row justify-between mr-2 items-start">
+            <div className="self-stretch md:mt-8 flex flex-row md:justify-around justify-between mr-2 items-start">
                 <div className="flex flex-col gap-2 items-start">
                     <div className="relative flex flex-col pt-2 w-[355px]">
                         <div className="text-xl font-['Segoe_UI'] font-semibold leading-[28px] text-white absolute top-0 left-6 h-6 w-[238px]">
