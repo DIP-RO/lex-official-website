@@ -1,10 +1,19 @@
+import { Link } from "react-router-dom";
 
 const LexButton = () => {
     return (
-        <div className=" sticky bottom-1 right-1">
-            <button className="btn">Button</button>
-        </div>
-    );
+        
+      
+        <Link to='/Lex-Ai'>
+        <button className="  fixed  right-10 bottom-10" >
+          <img src="https://i.ibb.co/PxSd5BG/image-removebg-preview-2.png" alt="lex" border="0" width="75" height="75" />
+        </button>
+        </Link>
+   
+    
+  );
 };
+
+
 
 export default LexButton;
