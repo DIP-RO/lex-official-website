@@ -21,7 +21,7 @@ const Packages = () => {
     return (
         <div className="flex flex-col w-full bg-[#1d344a]">
             <h1 className="text-center text-5xl font-['Open_Sans'] font-bold text-white mt-10 ">PACKAGES</h1>
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-3 lg:gap-6 sm:gap-2 mt-10 lg:mx-5 p-2">
+            <div className="grid lg:grid-cols-3 md:grid-cols-3 md:gap-5 grid-cols-3 lg:gap-6 sm:gap-2 mt-10 lg:mx-5 p-2">
                 {Packages.map((data) => (
                     <div
                         key={data.id}

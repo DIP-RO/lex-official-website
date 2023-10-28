@@ -25,7 +25,7 @@ const Stats = () => {
   ];
   return (
     <div className="  justify-center sm:hidden   ">
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-14 m-10 bg-[#1d344a] rounded-[50px] px-24">
+      <div className="grid md:hidden lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-14 m-10 bg-[#1d344a] rounded-[50px] px-24">
         {stats.map((data, index) => (
             <div key={index} className="stat">
             <img src={data.icon} alt="" className="w-25 h-25" />

@@ -2,7 +2,7 @@
 
 function MyComponent() {
     return (
-        <div className="hero min-h-screen bg-[#1d344a] sm:hidden">
+        <div className="hero  bg-[#1d344a] sm:hidden">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <img src="https://i.ibb.co/XLqBYkL/image.png" className="max-w-lg rounded-lg shadow-2xl w-1/2" />
                 <div className="w-1/2">
