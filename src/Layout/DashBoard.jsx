@@ -10,7 +10,7 @@ const DashBoard = () => {
     return (
         <div className="max-w-full sm:max-w-sm">
             <Navbar></Navbar>
-            <div className='flex flex-wrap bg-gray-900 min-h-screen '>
+            <div className='flex lg:flex-wrap bg-gray-900 min-h-screen md:flex-row'>
                 <div className='bg-gray-900 w-1/4  border-r-2 border-black min-h-screen sm:hidden'>
                     <h1 className="  flex justify-center h-10 items-center gap-3 w-full my-5 bg-[#DA1E37] hover:bg-[#DA1E37] border-0 border-spacing-0 rounded-l-3xl text-white rounded-r-none ml-5"> <img
                         src="https://file.rendit.io/n/DMLiYpHTZnxxLEt4ZZbT.svg"
@@ -52,7 +52,7 @@ const DashBoard = () => {
                         className="w-4"
                     /> Logout</button>
                 </div>
-                <div className='bg-gray-900 lg:w-3/4 sm:w-full min-h-screen'>
+                <div className='bg-gray-900 lg:w-3/4 sm:w-full min-h-screen md:w-3/4'>
                     <Outlet></Outlet>
                 </div>
 

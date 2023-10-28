@@ -32,7 +32,7 @@ const DashboardHome = () => {
 
 
     return (
-        <div className="flex flex-col  items-center ">
+        <div className="flex flex-col  items-center  ">
             <div className="avatar mt-5 lg:hidden md:hidden xl:hidden">
                 <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                     <img src="https://i.ibb.co/hFKnrDC/24-23-08.jpg" />
@@ -42,7 +42,7 @@ const DashboardHome = () => {
                 Hello Md riyadh! Let&apos;s get started.
             </div>
           
-            <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-2 lg:gap-6 lg:m-10  sm:gap-5 sm:hidden">
+            <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-2 lg:gap-6 lg:m-10 md:gap-6 md:m-5 sm:gap-5 sm:hidden">
                 {data.map((item) => (
                     <div key={item.id} className="flex sm:p-5 w-full h-fit lg:m-5 bg-[#da1e37] rounded-lg sm:flex-col-reverse justify-center items-center">
                         <div className="w-1/2 flex justify-center items-center">
