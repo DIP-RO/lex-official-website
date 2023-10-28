@@ -41,7 +41,7 @@ const LawyerDetails = () => {
     return (
         <div className='sm:max-w-sm'>
             <div className="hero  bg-gray-900 sm:max-w-sm">
-                <div className="hero-content  flex-col lg:flex-row-reverse w-fit h-fit">
+                <div className="hero-content  flex-col lg:flex-row-reverse md:flex-row-reverse  w-fit h-fit">
                     <div className='lg:w-1/2 md:w-1/2 sm:full  '>
                         <img src="https://i.ibb.co/vh1310R/image.png" alt="" className="h-60 w-60  rounded-lg shadow-2xl" />
                     </div>
@@ -57,7 +57,7 @@ const LawyerDetails = () => {
             </div>
 
             <div className="hero min-h-screen  bg-gray-900 sm:max-w-sm">
-                <div className="hero-content flex-col lg:flex-row">
+                <div className="hero-content flex-col lg:flex-row md:flex-row">
                     <div className="bg-gray-900 lg:p-11">
 
 

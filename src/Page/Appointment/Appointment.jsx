@@ -23,7 +23,7 @@ const Appointment = () => {
             <div className="text-3xl mt-10 font-['Poppins'] font-semibold leading-[32px] text-white">
                 Online Now
             </div>
-            <AvaiableLawyer></AvaiableLawyer>
+            <AvaiableLawyer ></AvaiableLawyer>
             <div className=" bg-white rounded-lg">
                 <DayPicker
                     mode="single"

@@ -6,7 +6,7 @@ import LexButton from "../Component/LexButton/LexButton";
 
 const Main = () => {
     return (
-        <div className="bg-[rgba(29,_52,_74,_0.77)] ">
+        <div className="bg-[rgba(29,_52,_74,_0.77)] sm:max-w-sm">
             <Navbar ></Navbar>
             
             <Outlet></Outlet>
