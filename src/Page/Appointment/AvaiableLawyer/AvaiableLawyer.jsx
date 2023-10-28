@@ -13,17 +13,11 @@ const AvaiableLawyer = () => {
             name: 'Olga jhonso',
             message: 'Sample text. Click to select the text box. Click again or double click to start editing the text.',
             image: "https://i.ibb.co/19myfyW/image.png",
-        },
-        {
-            id: 3,
-            name: 'Paul Smith',
-            message: 'Sample text. Click to select the text box. Click again or double click to start editing the text.',
-            image: "https://i.ibb.co/BZtx9Gf/image.png",
         }
     ]
 
     return (
-        <div className="h-[450px] grid lg:grid-cols-3 md:grid-cols-2 grid-cols-2 lg:gap-14 md:gap-14 mt-10 sm:max-w-sm sm:gap-4 ">
+        <div className="h-[450px] grid lg:grid-cols-3 md:grid-cols-2 grid-cols-2 lg:gap-14 md:gap-5 mt-10 sm:max-w-sm sm:gap-4 md:min-h-fit">
                     {testymony.map((testy) => (
                         <Link  key={testy.id} to="/lawyardetails">
                         <button
