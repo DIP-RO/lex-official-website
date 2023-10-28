@@ -30,14 +30,16 @@ const Navbar = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-gray-900 rounded-box w-52">
-                        <li className='text-white mt-5'><Link to="/">{t("home")}</Link></li>
-                        <li className='text-white mt-5'><Link to="/addProduct">Add Product</Link></li>
-                        <li className='text-white mt-5'><Link to="/blog">Blog</Link></li>
+                        <li className='text-white '><Link to="/">{t("home")}</Link></li>
+                        <li className='text-white '><Link to="/appointment">Appointment</Link></li>
+                        <li className='text-white '><Link to="/blog">Blog</Link></li>
+                        <li className='text-white '><Link to="/about">About</Link></li>
+                        <li className='text-white '><Link to="/contact">Contact</Link></li>
                         <>
                             <li>
-                                <div className="w-10 rounded-full ">
+                                <Link to="/dashboard/profile"><div className="w-10 rounded-full ">
                                     <img alt='' src="https://i.ibb.co/tKB8PxV/user-circle-1.png" />
-                                </div>
+                                </div></Link>
                             </li>
                         </>
                     </ul>

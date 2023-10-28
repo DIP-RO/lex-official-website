@@ -34,7 +34,7 @@ const Moto = () => {
 
     const motosToDisplay = i18n.language === 'en' ? motosEng : motosBan;
     return (
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-14 m-10 lg:ml-20 sm:hidden">
+        <div className="grid lg:grid-cols-3  md:grid-cols-3 text-base sm:text-lg md:gap-5 lg:text-xl xl:text-2xl grid-cols-1 lg:gap-14 m-10 lg:ml-20 sm:hidden">
             {motosToDisplay.map((moto) => (
                 <div className="col-md-4 flex justify-center items-center gap-7" key={moto.id}>
                     <div className="">

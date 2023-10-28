@@ -14,9 +14,9 @@ const Appointment = () => {
 
 
     return (
-        <div className="flex flex-col w-full  items-center my-10 min-h-screen sm:max-w-sm">
+        <div className="flex flex-col w-full  items-center my-10 sm:max-w-sm">
             <div className="bg-[#1c5168] w-1/2 flex flex-col justify-center sm:w-3/4 sm:p-5 h-20 shrink-0 items-center rounded-[35px]">
-                <div className="text-6xl sm:text-lg  font-['Poppins'] font-semibold leading-[32px] text-white">
+                <div className="text-6xl lg:text-6xl md:text-3xl sm:text-lg  font-['Poppins'] font-semibold leading-[32px] text-white">
                     TAKE APPOINTMENT
                 </div>
             </div>
