@@ -13,11 +13,11 @@ const OurTeam = () => {
             role: 'Co Founder',
             image: "https://i.ibb.co/hFKnrDC/24-23-08.jpg",
         },
-        {
-            id: 3,
-            name: 'ASIF DEWAN',
+        { id: 3,
+            name: 'DIPRO PAUL',
             role: 'Co Founder',
-            image: "https://i.ibb.co/4P34NZp/photo-2023-04-30-18-34-13.jpg",
+            image: "https://i.ibb.co/b1vWMk8/cover.jpg",
+          
         },
         {
             id: 4,
@@ -45,9 +45,9 @@ const OurTeam = () => {
         },
         {
             id: 8,
-            name: 'DIPRO PAUL',
+            name: 'ASIF DEWAN',
             role: 'Co Founder',
-            image: "https://i.ibb.co/b1vWMk8/cover.jpg",
+            image: "https://i.ibb.co/4P34NZp/photo-2023-04-30-18-34-13.jpg",
         },
     ]
 
