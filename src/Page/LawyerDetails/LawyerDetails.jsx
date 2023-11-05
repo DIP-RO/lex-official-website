@@ -18,7 +18,7 @@ const LawyerDetails = () => {
     } = useForm();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/api/v1/lawyers/lawyers/${id}`)
+        fetch(`https://attractive-ruby-cow.cyclic.app/api/v1/lawyers/lawyers/${id}`)
             .then((response) => response.json())
             .then((data) => setLawyer(data))
             .catch((error) => console.error("Error fetching law data:", error));
@@ -26,7 +26,7 @@ const LawyerDetails = () => {
 
     useEffect(() => {
         if (lawyer._id) {
-            fetch(`http://localhost:5000/api/v1/reviews/reviews/LawyerId/${lawyer._id}`)
+            fetch(`https://attractive-ruby-cow.cyclic.app/api/v1/reviews/reviews/LawyerId/${lawyer._id}`)
                 .then((response) => response.json())
                 .then((data) => setReviews(data))
                 .catch((error) => console.error("Error fetching reviews:", error));
@@ -43,7 +43,7 @@ const LawyerDetails = () => {
             comment: data.description
         };
 
-        fetch("http://localhost:5000/api/v1/reviews/reviews", {
+        fetch("https://attractive-ruby-cow.cyclic.app/api/v1/reviews/reviews", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

@@ -8,7 +8,7 @@ const LawDetails = () => {
     const [related, setRelated] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/api/v1/lawData/lawData/${id}`)
+        fetch(`https://attractive-ruby-cow.cyclic.app/api/v1/lawData/lawData/${id}`)
             .then((response) => response.json())
             .then((data) => setData(data))
             .catch((error) => console.error("Error fetching law data:", error));
@@ -16,7 +16,7 @@ const LawDetails = () => {
 
     useEffect(() => {
         if (data?.Problem) {
-            fetch(`http://localhost:5000/api/v1/lawData/lawDataByProblem/${data.Problem}`)
+            fetch(`https://attractive-ruby-cow.cyclic.app/api/v1/lawData/lawDataByProblem/${data.Problem}`)
                 .then((response) => response.json())
                 .then((data) => setRelated(data))
                 .catch((error) => console.error("Error fetching related data:", error));

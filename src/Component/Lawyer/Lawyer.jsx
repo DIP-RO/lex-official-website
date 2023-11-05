@@ -5,7 +5,7 @@ const Lawyer = () => {
     const [lawyers, setLawyers] = useState([]);
     
     useEffect(() => {
-        fetch("http://localhost:5000/api/v1/lawyers/lawyers")
+        fetch("https://attractive-ruby-cow.cyclic.app/api/v1/lawyers/lawyers")
             .then((response) => response.json())
             .then((data) => setLawyers(data))
             .catch((error) => console.error("Error fetching law data:", error));
