@@ -37,13 +37,7 @@ const Slider = () => {
       name: 'Nat Reynolds',
       message: 'Sample text. Click to select the text box. Click again or double click to start editing the text.',
       image: "https://i.ibb.co/zh2FBcS/image.png",
-    },
-    {
-      id: 4,
-      name: 'Nat Reynolds',
-      message: 'Sample text. Click to select the text box. Click again or double click to start editing the text.',
-      image: "https://i.ibb.co/zh2FBcS/image.png",
-    },
+    }
   ]
 
   return (
