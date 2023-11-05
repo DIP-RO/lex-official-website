@@ -1,6 +1,6 @@
 
 import Iframe from "react-iframe";
-import "./Others.css";
+import "./others.css";
 import {
   FaFacebook,
   FaInstagram,

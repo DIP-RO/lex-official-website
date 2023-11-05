@@ -19,6 +19,7 @@ import Profile from "../Page/Profile/Profile";
 import Review from "../Page/Review/Review";
 import ComingSoon from "../Page/ComingSoon/ComingSoon";
 import LexAi from "../Page/LexAi/LexAi";
+import LawDEtails from "../Page/LawDetails/LawDEtails";
 
  export const router = createBrowserRouter([
     {
@@ -54,12 +55,20 @@ import LexAi from "../Page/LexAi/LexAi";
           element:<Contact></Contact>,
         },
         {
-          path: "/lawyardetails",
+          path: "/lawyardetails/:id",
           element:<LawyerDetails></LawyerDetails>,
         },
         {
           path: "/lex-Ai",
           element:<LexAi></LexAi>,
+        },
+        {
+          path: "/law-details/:id",
+          element:<LawDEtails></LawDEtails>,
+        },
+        {
+          path: "/coming-soon",
+          element:<ComingSoon></ComingSoon>,
         },
         
       ],

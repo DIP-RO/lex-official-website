@@ -1,13 +1,16 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next'
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useContext } from "react";
 import { AuthContext } from "../../Context/UserContext";
+import axios from 'axios';
 
 const Navbar = () => {
 
     const { t, i18n } = useTranslation()
-    const {user} = useContext(AuthContext);
+    const { user } = useContext(AuthContext);
+    const [data, setData] = useState([]);
+    const [record, setRecord] = useState([]);
 
     const onChangeLang = (e) => {
         i18n.changeLanguage(e.target.value)
@@ -22,9 +25,28 @@ const Navbar = () => {
         }
     })
 
+
+    useEffect(() => {
+        axios.get('https://attractive-ruby-cow.cyclic.app/api/v1/lawData/lawData')
+            .then((res) => {
+                setData(res.data);
+            })
+            .catch((err) => {
+                console.log(err);
+            });
+    }, []);
+
+    const filter = (e) => {
+
+        const keyword = e.target.value;
+        const Result = data.filter(f => f.Problem.includes(keyword))  
+        setRecord(Result.slice(0, 5));
+
+    };
+
     return (
         <div className="navbar sticky z-10 top-0 bg-[#1d344a] sm:hidden  flex justify-between border-b-2 border-black ">
-            <div className="navbar-start">
+            <div className="navbar-start  ">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -67,33 +89,39 @@ const Navbar = () => {
                     </li>
                     <li className=" "><div id="RootRoot" className="flex flex-row justify-between w-full items-start ">
                         <div className="flex flex-row  items-start">
-                            <div
-                                className="bg-white flex flex-col justify-center pl-4 w-64 shrink-0 h-12 items-start rounded-[25px]"
-                            >
-                                <div className="text-sm font-['Poppins'] text-black/70">{t("Home.Navbar.search")}</div>
-                            </div>
-                            <button
-                                className="bg-[#daa21e] flex flex-col justify-center w-12 shrink-0 h-12 items-center rounded-[25px]"
-                            >
-                                <img
-                                    src="https://file.rendit.io/n/YjixzmTdbw6vchA1G3G0.svg"
-                                    className="w-4"
+                            <div className="dropdown dropdown-hover">
+                                <input
+                                    tabIndex={0}
+                                    className="bg-white flex flex-col justify-center pl-4 w-64 shrink-0 h-12 items-start rounded-[25px]"
+                                    placeholder={t("Home.Navbar.search")}
+                                    onChange={filter}
                                 />
-                            </button>
+                                <ul
+                                    tabIndex={0}
+                                    className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-b-box w-52 max-w-fit"
+                                >
+                                    {record.map((item) => (
+                                        <Link key={item._id} to={`/law-details/${item._id}`}>
+                                            <li className="w-52 overflow-hidden">{item.Query}</li>
+                                        </Link>
+                                    ))}
+                                </ul>
+                            </div>
+                          
                         </div>
                     </div>
                     </li>
-                        {   user?.uid ?
-                             <li>
-                             <Link to="/dashboard">
-                                 <div className="w-24 rounded-full ">
-                                     <img alt='' src="https://i.ibb.co/tKB8PxV/user-circle-1.png" />
-                                 </div>
-                             </Link>
-                         </li>
-                         : <li className='text-white mt-5'><Link to="/login">Login</Link></li>
-                    
-                        }
+                    {user?.uid ?
+                        <li>
+                            <Link to="/dashboard">
+                                <div className="w-24 rounded-full ">
+                                    <img alt='' src="https://i.ibb.co/tKB8PxV/user-circle-1.png" />
+                                </div>
+                            </Link>
+                        </li>
+                        : <li className='text-white mt-5'><Link to="/login">Login</Link></li>
+
+                    }
                 </ul>
             </div>
         </div>

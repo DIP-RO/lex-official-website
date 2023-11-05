@@ -21,7 +21,7 @@ const ButtomNavigation = () => {
       <div className="px-6">
         <ul className="flex relative">
           <span
-            className={`bg-rose-600 mb-5 duration-500 ${Menus[active].dis} border-4 border-gray-900 h-16 w-16 absolute
+            className={`bg-[#1d344a] mb-5 duration-500 ${Menus[active].dis} border-4 border-gray-900 h-16 w-16 absolute
          -top-5 rounded-full`}
           >
             <span
