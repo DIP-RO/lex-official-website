@@ -32,7 +32,7 @@ const FindBlog = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex items-center justify-center mt-10">
+            <div className="flex items-center justify-center my-10">
             <button className="btn ">View More..</button>
             </div>
         </div>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Service = () => {
     const service = [
         {
@@ -55,7 +57,9 @@ const Service = () => {
                                 </div>
                             </div>
                             <div className="relative w-96 z-0 lg:ml-10 lg:mt-10 md:mt-0 sm:w-full lg:h-[280px] md:h-72 sm:h-52 border-2 border-black bg-gray-900 opacity-0 hover:opacity-100 rounded-2xl flex justify-center items-center md:w-72">
+                                <Link to="/appointment">
                                 <button className="animate-bounce btn bg-[#1d344a] hover:bg-[#1d344a] text-white">Consult Now</button>
+                                </Link>
                             </div>
                         </div>
                     </div>

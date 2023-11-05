@@ -10,10 +10,10 @@ const Subscribe = () => {
                 </div>
             </div>
             <div className="flex flex-row gap-4 items-center">
-                <div className="border-solid border-[#e5e7eb] bg-white flex flex-col w-[320px] md:w-[auto] h-10 items-start pl-3 py-2 border rounded">
-                    <div className="text-sm font-['Segoe_UI'] text-[#9ca3af]">Subscribe</div>
-                </div>
-                <button className="border-solid border-white self-start flex flex-col h-10 items-center py-2 border rounded">
+                <input className="border-solid border-[#e5e7eb] bg-white flex flex-col w-[320px] md:w-[auto] h-10 items-start pl-3 py-2 border rounded" placeholder="Subscribe">
+                    
+                </input>
+                <button className="border-solid btn bg-[#1d344a] hover:bg-[#1d344a] border-white self-start flex flex-col h-10 items-center py-2 border rounded">
                     <div className="text-center font-['Segoe_UI'] font-semibold leading-[24px] text-white mx-4">
                         Subscribe
                     </div>

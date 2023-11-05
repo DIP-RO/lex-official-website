@@ -4,25 +4,25 @@ const Testymony = () => {
             id: 1,
             name: 'Stella Larson',
             message: 'Sample text. Click to select the text box. Click again or double click to start editing the text.',
-            image: "https://i.ibb.co/b7z8Z3t/image.png",
+            image: "https://i.ibb.co/VTsfwGj/fpdl-in-person-wearing-glasses-500927-366-normal.jpg",
         },
         {
             id: 2,
             name: 'Olga Jhonso',
             message: 'Sample text. Click to select the text box. Click again or double click to start editing the text.',
-            image: "https://i.ibb.co/19myfyW/image.png",
+            image: "https://i.ibb.co/VTsfwGj/fpdl-in-person-wearing-glasses-500927-366-normal.jpg",
         },
         {
             id: 3,
             name: 'Paul Smith',
             message: 'Sample text. Click to select the text box. Click again or double click to start editing the text.',
-            image: "https://i.ibb.co/BZtx9Gf/image.png",
+            image: "https://i.ibb.co/VTsfwGj/fpdl-in-person-wearing-glasses-500927-366-normal.jpg",
         },
         {
             id: 4,
             name: 'Nat Reynolds',
             message: 'Sample text. Click to select the text box. Click again or double click to start editing the text.',
-            image: "https://i.ibb.co/zh2FBcS/image.png",
+            image: "https://i.ibb.co/VTsfwGj/fpdl-in-person-wearing-glasses-500927-366-normal.jpg",
         },
     ];
 

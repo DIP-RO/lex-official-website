@@ -1,33 +1,25 @@
-const Lawyer = () => {
-    const lawyers = [
-        {
-            id: 1,
-            name: "Md. Tarim Chowdhury",
-            img: "https://i.ibb.co/GsVSGYW/image.png",
-            designation: "Lawyer",
-        },
-        {
-            id: 2,
-            name: "Dilruba Khan",
-            img: "https://i.ibb.co/vh1310R/image.png",
-            designation: "Lawyer",
-        },
-        {
-            id: 3,
-            name: "Jalkarin Iqbal",
-            img: "https://i.ibb.co/c1cRL4p/image.png",
-            designation: "Lawyer",
-        },
-    ];
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
+const Lawyer = () => {
+    const [lawyers, setLawyers] = useState([]);
+    
+    useEffect(() => {
+        fetch("http://localhost:5000/api/v1/lawyers/lawyers")
+            .then((response) => response.json())
+            .then((data) => setLawyers(data))
+            .catch((error) => console.error("Error fetching law data:", error));
+    }, []);
     return (
         <div className="flex md:mt-10 lg:mt-5 flex-col justify-center items-center gap-10 sm:hidden">
             <div className="grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1 gap-8">
                 {lawyers.map((lawyer) => (
                     <div key={lawyer.id} className="flex flex-col items-center justify-center p-5">
-                        <img className="w-[300px] h-[350px] rounded-3xl" src={lawyer.img} alt="" />
+                        <Link to={`/lawyardetails/${lawyer._id}`}>
+                        <img className="w-[300px] h-[350px] rounded-3xl" src={lawyer.image} alt="" />
+                        </Link>
                         <h1 className="text-2xl font-bold text-center mt-2 text-white">{lawyer.name}</h1>
-                        <h3 className="text-xl font-bold text-center text-white">{lawyer.designation}</h3>
+                        <h3 className="text-xl font-bold text-center text-white">{lawyer.specialization}</h3>
                     </div>
                 ))}
             </div>

@@ -4,7 +4,7 @@ import Slider from "./Slider/Slider";
 
 const Blog = () => {
     return (
-        <div >
+        <div className="sm:-my-10">
             <Slider></Slider>
             <FindBlog></FindBlog>
         </div>
