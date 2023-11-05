@@ -7,7 +7,7 @@ const LexSearch = () => {
     const [record, setRecord] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/api/v1/lawData/lawData')
+        axios.get('https://attractive-ruby-cow.cyclic.app/api/v1/lawData/lawData')
             .then((res) => {
                 setData(res.data);
             })

@@ -10,7 +10,7 @@ const Review = () => {
     const [reviews, setReview] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/api/v1/reviews/reviews/userEmail/${user.email}`)
+        fetch(`https://attractive-ruby-cow.cyclic.app/api/v1/reviews/reviews/userEmail/${user.email}`)
             .then((response) => response.json())
             .then((data) => setReview(data))
             .catch((error) => console.error("Error fetching law data:", error));
