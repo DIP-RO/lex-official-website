@@ -83,8 +83,8 @@ const LawyerDetails = () => {
                         <p className="py-3 text-white w-full sm:hidden"> {lawyer.description}</p>
 
                         <div className='flex'>
-                            <button className='btn btn-sm mr-2'>Book Now</button>
-                            <button className='btn btn-sm'>Message Now</button>
+                            <button className='btn btn-sm mr-2'>Appointment Now</button>
+                            <button className='btn btn-sm'>Bookmark</button>
                         </div>
                     </div>
                 </div>

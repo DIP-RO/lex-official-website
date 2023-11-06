@@ -29,17 +29,8 @@ const LexAi = () => {
 
 
                         <div className="w-3/4 bg-white h-72">
-                            <div className="chat chat-end">
-                                <div className="chat-image avatar">
-                                    <div className="w-10 rounded-full">
-                                        <img src="https://i.ibb.co/kg3X7W8/photo-2023-05-15-00-28-43.jpg" />
-                                    </div>
-                                </div>
-
-                                <div className="chat-bubble w-fit bg-black text-white">who are you?</div>
-
-                            </div>
-                            <div className="chat chat-start">
+                           
+                            <div className="chat chat-start mt-10">
                                 <div className="chat-image avatar">
                                     <div className="w-10 rounded-full">
                                         <img src="https://i.ibb.co/kg3X7W8/photo-2023-05-15-00-28-43.jpg" />
@@ -52,7 +43,7 @@ const LexAi = () => {
                         </div>
                         <div className="flex gap-2">
                             <div>
-                            <textarea className='textarea textarea-bordered textarea-sm  rounded' placeholder='type something here' value={val} onChange={handleChange} rows="2" ref={textAreaRef}></textarea>
+                            <textarea className='textarea textarea-bordered textarea-sm lg:w-96 rounded' placeholder='type something here' value={val} onChange={handleChange} rows="2" ref={textAreaRef}></textarea>
                             </div>
                             <div className="lg:mb-10">
                                 <button>

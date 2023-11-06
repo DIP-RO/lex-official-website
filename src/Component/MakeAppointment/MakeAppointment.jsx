@@ -1,5 +1,5 @@
+import { Link } from "react-router-dom";
 import Loading from "../Loading/Loading";
-
 const MakeAppointment = () => {
   <Loading/>
   return (
@@ -16,7 +16,7 @@ const MakeAppointment = () => {
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In
             deleniti eaque aut repudiandae et a id nisi.
           </p>
-          <button className="btn btn-neutral text-white">Appointment Here</button>
+          <Link to="/appointment"><button className="btn btn-neutral text-white">Appointment Here</button></Link>
         </div>
       </div>
     </div>
