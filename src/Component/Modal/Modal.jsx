@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Modal = () => {
     return (
-        <dialog id="my_modal_3" className="modal max-h-fit bg-inherit ">
+        <dialog id="my_modal_3" className="modal max-h-fit  bg-[#1d344a98]">
             <div className="modal-box bg-[#1d344a] w-3/4">
                 <form method="dialog">
                     {/* if there is a button in form, it will close the modal */}

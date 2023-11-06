@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const FindBlog = () => {
     return (
         <div className="w-full p-10 sm:mb-5">
@@ -14,7 +16,7 @@ const FindBlog = () => {
                     <div className="w-1/2 flex lg:items-center justify-start flex-col">
                         <h1 className="text-5xl font-bold text-white sm:text-lg">Box Office News!</h1>
                         <p className="py-6 text-white sm:hidden">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button className="btn sm:btn-xs sm:w-3/4 sm-mt-2">Read Now</button>
+                        <Link to='/blog-details/:id'><button className="btn sm:btn-xs sm:w-3/4 sm-mt-2">Read Now</button></Link>
                     </div>
                 </div>
             </div>
@@ -28,7 +30,7 @@ const FindBlog = () => {
                     <div className="w-1/2 flex lg:items-center justify-start flex-col">
                         <h1 className="text-5xl font-bold text-white sm:text-lg">Box Office News!</h1>
                         <p className="py-6 text-white sm:hidden">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button className="btn sm:btn-xs sm:w-3/4 sm-mt-2">Read Now</button>
+                        <Link to='/blog-details/:id'><button className="btn sm:btn-xs sm:w-3/4 sm-mt-2">Read Now</button></Link>
                     </div>
                 </div>
             </div>

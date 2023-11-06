@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const MakeAppointment = () => {
   return (
     <div className="hero bg-[#1d344a] sm:hidden">
@@ -13,7 +14,7 @@ const MakeAppointment = () => {
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In
             deleniti eaque aut repudiandae et a id nisi.
           </p>
-          <button className="btn btn-neutral text-white">Appointment Here</button>
+          <Link to="/appointment"><button className="btn btn-neutral text-white">Appointment Here</button></Link>
         </div>
       </div>
     </div>

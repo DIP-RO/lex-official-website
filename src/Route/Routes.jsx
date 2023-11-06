@@ -20,6 +20,7 @@ import Review from "../Page/Review/Review";
 import ComingSoon from "../Page/ComingSoon/ComingSoon";
 import LexAi from "../Page/LexAi/LexAi";
 import LawDEtails from "../Page/LawDetails/LawDEtails";
+import BlogDetails from "../Page/BlogDetails/BlogDetails";
 
  export const router = createBrowserRouter([
     {
@@ -69,6 +70,10 @@ import LawDEtails from "../Page/LawDetails/LawDEtails";
         {
           path: "/coming-soon",
           element:<ComingSoon></ComingSoon>,
+        },
+        {
+          path: "/blog-details/:id",
+          element:<BlogDetails></BlogDetails>,
         },
         
       ],
