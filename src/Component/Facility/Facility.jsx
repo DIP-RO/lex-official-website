@@ -1,6 +1,8 @@
+import Loading from "../Loading/Loading";
 
 
 const Facility = () => {
+    <Loading/>
     return (
         <div
             id="DivmyRoot"

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import Loading from "../../Component/Loading/Loading";
 
 const LawDetails = () => {
     const { id } = useParams();
@@ -22,7 +23,7 @@ const LawDetails = () => {
                 .catch((error) => console.error("Error fetching related data:", error));
         }
     }, [data.Problem]);
-
+<Loading/>
     return (
         <div>
             <div className="w-full bg-base-100">

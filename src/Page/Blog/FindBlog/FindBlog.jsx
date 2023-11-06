@@ -1,4 +1,7 @@
+import Loading from "../../../Component/Loading/Loading";
+
 const FindBlog = () => {
+    <Loading/>
     return (
         <div className="w-full p-10 sm:mb-5">
             <div className="flex justify-center items-center mb-10">

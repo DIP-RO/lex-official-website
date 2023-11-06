@@ -1,6 +1,8 @@
+import Loading from "../Loading/Loading"
 
 
 function MyComponent() {
+    <Loading/>
     return (
         <div className="hero  bg-[#1d344a] sm:hidden">
             <div className="hero-content flex-col md:flex-row lg:flex-row-reverse">

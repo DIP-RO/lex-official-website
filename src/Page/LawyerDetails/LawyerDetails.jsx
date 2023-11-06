@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import swal from 'sweetalert';
 import { AuthContext } from '../../Context/UserContext';
 import ReviewCard from '../../Global/ReviewCard/ReviewCard';
+import Loading from "../../Component/Loading/Loading";
 
 const LawyerDetails = () => {
     const { user } = useContext(AuthContext);
@@ -17,6 +18,15 @@ const LawyerDetails = () => {
         handleSubmit,
     } = useForm();
 
+    const fetchReviews = () => {
+        if (lawyer._id) {
+            fetch(`https://attractive-ruby-cow.cyclic.app/api/v1/reviews/reviews/LawyerId/${lawyer._id}`)
+                .then((response) => response.json())
+                .then((data) => setReviews(data))
+                .catch((error) => console.error("Error fetching reviews:", error));
+        }
+    };
+
     useEffect(() => {
         fetch(`https://attractive-ruby-cow.cyclic.app/api/v1/lawyers/lawyers/${id}`)
             .then((response) => response.json())
@@ -25,12 +35,7 @@ const LawyerDetails = () => {
     }, [id]);
 
     useEffect(() => {
-        if (lawyer._id) {
-            fetch(`https://attractive-ruby-cow.cyclic.app/api/v1/reviews/reviews/LawyerId/${lawyer._id}`)
-                .then((response) => response.json())
-                .then((data) => setReviews(data))
-                .catch((error) => console.error("Error fetching reviews:", error));
-        }
+        fetchReviews();
     }, [lawyer._id]);
 
     const handleAddReview = (data) => {
@@ -59,10 +64,12 @@ const LawyerDetails = () => {
                     icon: "success",
                     button: "DONE",
                 });
+                // Call fetchReviews to update reviews after successful review submission
+                fetchReviews();
             })
             .catch((err) => console.error(err));
     };
-
+<Loading/>
     return (
         <div className='sm:max-w-sm'>
             <div className="hero  bg-gray-900 sm:max-w-sm">

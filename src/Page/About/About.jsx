@@ -1,7 +1,9 @@
+import Loading from '../../Component/Loading/Loading';
 import Whylex from '../../Component/Whylex/Whylex';
 import Others from './others';
 import OurTeam from './OurTeam/OurTeam';
 const About = () => {
+    <Loading/>
     return (
         <div>
             <div className="hero md:h-96 lg:h-96" style={{ backgroundImage: 'url(https://i.ibb.co/zF82vmG/image.png)' }}>

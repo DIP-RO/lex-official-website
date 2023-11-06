@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
+import Loading from "../Loading/Loading";
 
 
 const Modal = () => {
+    <Loading/>
     return (
         <dialog id="my_modal_3" className="modal max-h-fit bg-inherit ">
             <div className="modal-box bg-[#1d344a] w-3/4">

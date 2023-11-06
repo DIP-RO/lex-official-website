@@ -4,6 +4,7 @@ import { useState } from "react";
 
 import { DayPicker } from 'react-day-picker';
 import 'react-day-picker/dist/style.css';
+import Loading from "../../Component/Loading/Loading";
 
 
 
@@ -11,7 +12,7 @@ const Appointment = () => {
 
     const [selected, setSelected] = useState(new Date());
 
-
+<Loading/>
     return (
         <div className="flex flex-col w-full  items-center lg:my-10 md:my-10 xl:my-10 sm:max-w-sm">
             <div className="bg-[#1c5168] w-1/2 flex flex-col justify-center sm:mt-3  sm:w-3/4 sm:p-5 h-20 shrink-0 items-center rounded-[35px]">

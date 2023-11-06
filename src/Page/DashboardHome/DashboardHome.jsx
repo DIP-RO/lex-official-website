@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Loading from "../../Component/Loading/Loading";
 
 const DashboardHome = () => {
 
@@ -30,7 +31,7 @@ const DashboardHome = () => {
 
     ];
 
-
+<Loading/>
     return (
         <div className="flex flex-col  items-center  ">
             <div className="avatar mt-5 lg:hidden md:hidden xl:hidden">

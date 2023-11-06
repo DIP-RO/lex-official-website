@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Loading from "../Loading/Loading";
 
 const Service = () => {
     const service = [
@@ -39,7 +40,7 @@ const Service = () => {
             description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking.",
         },
     ];
-
+<Loading/>
     return (
         <div className="sm:max-w-sm sm:mx-2 sm:mt-3">
             <h1 className="lg:mt-10 text-2xl lg:text-5xl md:text-5xl  font-bold text-white text-center md:mt-10  sm:ml-10 sm:text-center lg:text-center mb-5 md:mb-0">Our Services:</h1>

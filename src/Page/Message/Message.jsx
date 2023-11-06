@@ -1,6 +1,8 @@
+import Loading from "../../Component/Loading/Loading";
 
 
 const Message = () => {
+    <Loading/>
     return (
         <div className="flex justify-center mt-36">
             <div>

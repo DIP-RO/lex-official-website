@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useContext } from "react";
 import { AuthContext } from "../../Context/UserContext";
 import axios from 'axios';
+import Loading from "../Loading/Loading";
 
 const Navbar = () => {
 
@@ -43,7 +44,7 @@ const Navbar = () => {
         setRecord(Result.slice(0, 5));
 
     };
-
+<Loading/>
     return (
         <div className="navbar sticky z-10 top-0 bg-[#1d344a] sm:hidden  flex justify-between border-b-2 border-black ">
             <div className="navbar-start  ">

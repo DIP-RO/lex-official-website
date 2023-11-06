@@ -1,3 +1,5 @@
+import Loading from "../Loading/Loading";
+
 const Testymony = () => {
     const testymony = [
         {
@@ -25,7 +27,7 @@ const Testymony = () => {
             image: "https://i.ibb.co/VTsfwGj/fpdl-in-person-wearing-glasses-500927-366-normal.jpg",
         },
     ];
-
+<Loading/>
     return (
         <div className="flex flex-col justify-center items-center my-20 sm:hidden">
             <div>

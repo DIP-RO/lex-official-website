@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Context/UserContext";
+import Loading from "../../Component/Loading/Loading";
 
 const Login = () => {
     const { signIn, LoginWithGoogle } = useContext(AuthContext);
@@ -43,6 +44,7 @@ const Login = () => {
 
 
     }
+    <Loading/>
     return (
         <div className='flex justify-center  my-9'>
             <div className="card w-96 bg-[#1d344a] shadow-2xl ">

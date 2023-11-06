@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Loading from "../Loading/Loading";
 
 const Lawyer = () => {
     const [lawyers, setLawyers] = useState([]);
@@ -10,6 +11,7 @@ const Lawyer = () => {
             .then((data) => setLawyers(data))
             .catch((error) => console.error("Error fetching law data:", error));
     }, []);
+    <Loading/>
     return (
         <div className="flex md:mt-10 lg:mt-5 flex-col justify-center items-center gap-10 sm:hidden">
             <div className="grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1 gap-8">

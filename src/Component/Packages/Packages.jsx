@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Loading from "../Loading/Loading";
 
 
 const Packages = () => {
@@ -19,6 +20,7 @@ const Packages = () => {
             images:"https://i.ibb.co/TBR75Hw/image.png"
         }   
     ];
+    <Loading/>
     return (
         <div className="flex flex-col w-full bg-[#1d344a]">
             <h1 className="text-center text-5xl font-['Open_Sans'] font-bold text-white mt-10 ">PACKAGES</h1>

@@ -1,4 +1,7 @@
+import Loading from "../Loading/Loading";
+
 const Question = () => {
+    <Loading/>
     return (
         <div className="hero min-h-fit my-10 sm:hidden">
             <div className="hero-content flex-col gap-10 lg:flex-row-reverse md:flex-row-reverse">

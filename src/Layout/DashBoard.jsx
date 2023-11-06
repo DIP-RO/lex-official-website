@@ -4,9 +4,11 @@ import Footer from "../Component/Footer/Footer";
 import { useContext } from "react";
 import { AuthContext } from "../Context/UserContext";
 import ButtomNavigation from "../Component/ButtomNavigation/ButtomNavigation";
+import Loading from "../Component/Loading/Loading";
 
 const DashBoard = () => {
-    const {logOut} = useContext(AuthContext);
+    const { logOut } = useContext(AuthContext);
+    <Loading/>
     return (
         <div className="max-w-full sm:max-w-sm">
             <Navbar></Navbar>

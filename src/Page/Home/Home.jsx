@@ -13,9 +13,11 @@ import FacebookMsg from "../../Component/FacebookMsg/FacebookMsg";
 import Question from "../../Component/Question/Question";
 import LexSearch from "./LexSearch/LexSearch";
 import Introducing from "./Introducing/Introducing";
+import Loading from "../../Component/Loading/Loading";
 
 
 const Home = () => {
+    <Loading/>
     return (
         <div className="sm:max-w-sm">
             <LexSearch></LexSearch>
