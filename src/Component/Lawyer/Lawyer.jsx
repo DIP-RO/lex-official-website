@@ -14,6 +14,9 @@ const Lawyer = () => {
     <Loading/>
     return (
         <div className="flex md:mt-10 lg:mt-5 flex-col justify-center items-center gap-10 sm:hidden">
+             <h1 className="text-center text-5xl font-['Open_Sans'] font-bold text-white mt-10">
+      Recommended  Lawyers
+      </h1>
             <div className="grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1 gap-8">
                 {lawyers.map((lawyer) => (
                     <div key={lawyer.id} className="flex flex-col items-center justify-center p-5">

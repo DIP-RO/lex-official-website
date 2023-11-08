@@ -21,6 +21,14 @@ import ComingSoon from "../Page/ComingSoon/ComingSoon";
 import LexAi from "../Page/LexAi/LexAi";
 import LawDEtails from "../Page/LawDetails/LawDEtails";
 import BlogDetails from "../Page/BlogDetails/BlogDetails";
+import Service from "../Component/Service/Service";
+import AllServices from "../Component/Service/AllServices";
+import AddLawyer from "../Page/DashboardHome/AddLawyer";
+import AddService from "../Page/DashboardHome/AddService";
+import AddBlog from "../Page/DashboardHome/AddBlog";
+import AllUser from "../Page/DashboardHome/AllUser";
+import AllTestimonial from "../Page/DashboardHome/AllTestimonial";
+import AllAppointment from "../Page/DashboardHome/AllAppointment";
 
  export const router = createBrowserRouter([
     {
@@ -72,6 +80,14 @@ import BlogDetails from "../Page/BlogDetails/BlogDetails";
           element:<ComingSoon></ComingSoon>,
         },
         {
+          path: "/service",
+          element:<Service></Service>,
+        },
+        {
+          path: "/allService",
+          element:<AllServices></AllServices>,
+        },
+        {
           path: "/blog-details/:id",
           element:<BlogDetails></BlogDetails>,
         },
@@ -93,6 +109,30 @@ import BlogDetails from "../Page/BlogDetails/BlogDetails";
         {
           path: "/dashboard/booking",
           element: <Booking></Booking>,
+        },
+        {
+          path: "/dashboard/allAppointment",
+          element: <AllAppointment></AllAppointment>,
+        },
+        {
+          path: "/dashboard/addLawyer",
+          element: <AddLawyer></AddLawyer>,
+        },
+        {
+          path: "/dashboard/allUser",
+          element: <AllUser></AllUser>,
+        },
+        {
+          path: "/dashboard/allTestimonial",
+          element: <AllTestimonial></AllTestimonial>,
+        },
+        {
+          path: "/dashboard/addService",
+          element: <AddService></AddService>,
+        },
+        {
+          path: "/dashboard/addBlog",
+          element: <AddBlog></AddBlog>,
         },
         {
           path: "/dashboard/message",

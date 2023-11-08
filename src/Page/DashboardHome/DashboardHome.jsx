@@ -83,6 +83,7 @@ const DashboardHome = () => {
                         id="IconRoot"
                         className="w-4"
                     /> Messages</button></Link>
+                   
                     <Link to="/dashboard/review"><button className="btn text-white w-full my-2 bg-gray-900 hover:bg-gray-900 border-0"><img
                         src="https://file.rendit.io/n/zRWaGOKN4sY4Ueb6Qfaw.svg"
                         id="IconRoot"
@@ -93,6 +94,11 @@ const DashboardHome = () => {
                         id="IconRoot"
                         className="w-4"
                     /> Bookmarks</button></Link>
+                    <Link to="/dashboard/addService"><button className="btn text-white w-full my-2 bg-gray-900 hover:bg-gray-900 border-0"><img
+                        src="https://file.rendit.io/n/KbbQnmyRu4YNEpCvYYec.svg"
+                        id="IconRoot"
+                        className="w-4"
+                    /> Add Service</button></Link>
                     
                     <h1 className="  flex justify-center h-10 items-center gap-3 w-full my-5 bg-[#DA1E37] hover:bg-[#DA1E37] border-0 border-spacing-0  text-white rounded-r-none "> Account</h1>
                     <Link to="/dashboard/profile"><button className="btn text-white w-full my-2 bg-gray-900 hover:bg-gray-900 border-0"><img

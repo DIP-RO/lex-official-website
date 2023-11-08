@@ -24,7 +24,7 @@ const Home = () => {
             <Introducing></Introducing>
             <Carusel ></Carusel>
             <Moto></Moto>
-            <FacebookMsg></FacebookMsg>
+            {/* <FacebookMsg></FacebookMsg> */}
             <Whylex></Whylex>
             <Service></Service>
             <Stats></Stats>

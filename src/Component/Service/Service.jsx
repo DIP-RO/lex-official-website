@@ -21,24 +21,24 @@ const Service = () => {
             title: "Criminal Law",
             description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking.",
         },
-        {
-            id: 4,
-            img: "https://dailyasianage.com/library/1625955780_9.jpg",
-            title: "Cyber Crime",
-            description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking.",
-        },
-        {
-            id: 5,
-            img: "https://contiguglia.com/wp-content/uploads/2020/05/AdobeStock_226728389-1080x675.jpeg",
-            title: "Business Law",
-            description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking.",
-        },
-        {
-            id: 6,
-            img: "https://www.wotitzkylaw.com/wp-content/uploads/2021/07/28907376_m.jpg",
-            title: "Real Estate Law",
-            description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking.",
-        },
+        // {
+        //     id: 4,
+        //     img: "https://dailyasianage.com/library/1625955780_9.jpg",
+        //     title: "Cyber Crime",
+        //     description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking.",
+        // },
+        // {
+        //     id: 5,
+        //     img: "https://contiguglia.com/wp-content/uploads/2020/05/AdobeStock_226728389-1080x675.jpeg",
+        //     title: "Business Law",
+        //     description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking.",
+        // },
+        // {
+        //     id: 6,
+        //     img: "https://www.wotitzkylaw.com/wp-content/uploads/2021/07/28907376_m.jpg",
+        //     title: "Real Estate Law",
+        //     description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking.",
+        // },
     ];
 <Loading/>
     return (
@@ -48,7 +48,7 @@ const Service = () => {
                 {service.map((item) => (
                     <div key={item.id} className="">
                         <div className="flex relative">
-                            <div className="absolute card lg:w-96 lg:m-10 border-dashed border-2 lg:h-[280px] md:w-72 md:h-72 sm:h-52 sm:w-full border-white hover:border-solid ">
+                            <div className="absolute card bg-[#1d344a] lg:w-96 lg:m-10 border-dashed border-2 lg:h-[280px] md:w-72 md:h-72 sm:h-52 sm:w-full border-white hover:border-solid ">
                                 <figure className="px-10 pt-10">
                                     <img src={item.img} alt={item.title} className="rounded-full lg:w-32 lg:h-32 md:w-20 md:h-20 sm:w-16 sm:h-16" />
                                 </figure>
@@ -65,6 +65,11 @@ const Service = () => {
                         </div>
                     </div>
                 ))}
+            </div>
+            <div className="flex justify-center ">
+            <button className="btn bg-[#1d344a] lg:mt-2 md:mt-8 hover:bg-[#1d344a] mt-[-75px] text-white my-10">
+                <Link to="/allService">SEE MORE</Link>
+            </button>
             </div>
         </div>
     );
