@@ -1,6 +1,5 @@
 import Loading from "../Loading/Loading";
 
-
 const Stats = () => {
   const stats = [
     {

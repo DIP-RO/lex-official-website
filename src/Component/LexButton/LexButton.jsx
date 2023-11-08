@@ -5,8 +5,8 @@ const LexButton = () => {
         
       
         <Link to='/Lex-Ai'>
-        <button className="  fixed  right-8 bottom-24 sm:hidden" >
-          <img src="https://i.ibb.co/PxSd5BG/image-removebg-preview-2.png" alt="lex" border="0" width="75" height="75" />
+        <button className="  fixed  right-10 bottom-24 sm:hidden" >
+          <img src="https://i.ibb.co/PxSd5BG/image-removebg-preview-2.png" alt="lex" border="0" width="75"  height="75" />
         </button>
         </Link>
    

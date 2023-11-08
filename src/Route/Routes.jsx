@@ -21,14 +21,17 @@ import ComingSoon from "../Page/ComingSoon/ComingSoon";
 import LexAi from "../Page/LexAi/LexAi";
 import LawDEtails from "../Page/LawDetails/LawDEtails";
 import BlogDetails from "../Page/BlogDetails/BlogDetails";
-import Service from "../Component/Service/Service";
-import AllServices from "../Component/Service/AllServices";
-import AddLawyer from "../Page/DashboardHome/AddLawyer";
-import AddService from "../Page/DashboardHome/AddService";
+import Registration from "../Page/Registration/Registration";
 import AddBlog from "../Page/DashboardHome/AddBlog";
-import AllUser from "../Page/DashboardHome/AllUser";
+import AddService from "../Page/DashboardHome/AddService";
 import AllTestimonial from "../Page/DashboardHome/AllTestimonial";
 import AllAppointment from "../Page/DashboardHome/AllAppointment";
+import AddLawyer from "../Page/DashboardHome/AddLawyer";
+import AllUser from "../Page/DashboardHome/AllUser";
+import Service from "../Component/Service/Service";
+import AllServices from "../Component/Service/AllServices";
+
+import DownloadAppPage from "../Component/DownLoadApp/DownloadAppPage";
 
  export const router = createBrowserRouter([
     {
@@ -42,6 +45,10 @@ import AllAppointment from "../Page/DashboardHome/AllAppointment";
         {
           path: "/login",
           element:<Login></Login>,
+        },
+        {
+          path: "/app",
+          element:<DownloadAppPage></DownloadAppPage>,
         },
         {
           path: "/signup",
@@ -91,6 +98,7 @@ import AllAppointment from "../Page/DashboardHome/AllAppointment";
           path: "/blog-details/:id",
           element:<BlogDetails></BlogDetails>,
         },
+       
         
       ],
     },
@@ -120,7 +128,7 @@ import AllAppointment from "../Page/DashboardHome/AllAppointment";
         },
         {
           path: "/dashboard/allUser",
-          element: <AllUser></AllUser>,
+          element: <AllUser></AllUser>
         },
         {
           path: "/dashboard/allTestimonial",
@@ -152,6 +160,10 @@ import AllAppointment from "../Page/DashboardHome/AllAppointment";
         },
         
       ],
+    },
+    {
+      path: "/registration",
+      element:<Registration></Registration>,
     }
   ]);
   

@@ -9,7 +9,7 @@ import Moto from "../../Component/Moto/Moto";
 import Testymony from "../../Component/Testymony/Testymony";
 import Lawyer from "../../Component/Lawyer/Lawyer";
 import Service from "../../Component/Service/Service";
-import FacebookMsg from "../../Component/FacebookMsg/FacebookMsg";
+
 import Question from "../../Component/Question/Question";
 import LexSearch from "./LexSearch/LexSearch";
 import Introducing from "./Introducing/Introducing";
