@@ -50,7 +50,7 @@ const Service = () => {
                         <div className="flex relative">
                             <div className="absolute card lg:w-96 lg:m-10 border-dashed border-2 lg:h-[280px] md:w-72 md:h-72 sm:h-52 sm:w-full border-white hover:border-solid ">
                                 <figure className="px-10 pt-10">
-                                    <img src={item.img} alt={item.title} className="rounded-xl lg:w-24 lg:h-24 md:w-20 md:h-20 sm:w-16 sm:h-16" />
+                                    <img src={item.img} alt={item.title} className="rounded-xl lg:w-32 lg:h-32 md:w-20 md:h-20 sm:w-16 sm:h-16" />
                                 </figure>
                                 <div className="card-body items-center text-center">
                                     <h2 className="card-title text-white">{item.title}</h2>
