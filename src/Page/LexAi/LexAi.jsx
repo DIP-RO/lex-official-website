@@ -25,10 +25,10 @@ const LexAi = () => {
                     Welcome to LEX-AI
                 </div>
                 <div className="flex justify-center items-center ">
-                    <div className="border-solid overflow-hidden  flex flex-col justify-center gap-8  items-center   sm:rounded-t-[35px] lg:rounded-[35px]   p-5 bg-white w-3/4 sm:h-screen sm:w-full">
+                    <div className="border-solid overflow-hidden  flex flex-col justify-center gap-8  items-center   sm:rounded-t-[35px] lg:rounded-[35px]   p-5 bg-white w-3/4 sm:h-screen sm:w-full sm:bg-[#2533416c]">
 
 
-                        <div className="w-3/4 bg-white h-72">
+                        <div className="w-3/4 bg-white h-72 sm:bg-[#2533416c]">
                            
                             <div className="chat chat-start mt-10">
                                 <div className="chat-image avatar">
