@@ -63,6 +63,15 @@ const LawyerDetails = () => {
             .catch((err) => console.error(err));
     };
 
+
+    const handleAppointment = () => {
+
+    };
+    const handleBookmark = () => {
+        
+    };
+
+
     return (
         <div className='sm:max-w-sm'>
             <div className="hero  bg-gray-900 sm:max-w-sm">
@@ -76,8 +85,8 @@ const LawyerDetails = () => {
                         <p className="py-3 text-white w-full sm:hidden"> {lawyer.description}</p>
 
                         <div className='flex'>
-                            <button className='btn btn-sm mr-2'>Appointment Now</button>
-                            <button className='btn btn-sm'>Bookmark</button>
+                            <button className='btn btn-sm mr-2' onClick={handleAppointment}>Appointment Now</button>
+                            <button className='btn btn-sm' onClick={handleBookmark} >Bookmark</button>
                         </div>
                     </div>
                 </div>

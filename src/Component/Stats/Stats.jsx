@@ -1,5 +1,3 @@
-
-
 const Stats = () => {
   const stats = [
     {
