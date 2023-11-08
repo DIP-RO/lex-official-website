@@ -1,4 +1,7 @@
+import Loading from "../../../Component/Loading/Loading";
+
 const ContactModal = () => {
+    <Loading/>
     return (
         <dialog id="ContactModal" className="modal">
             <div className="modal-box bg-gray-900">

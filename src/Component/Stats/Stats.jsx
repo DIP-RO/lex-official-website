@@ -1,3 +1,5 @@
+import Loading from "../Loading/Loading";
+
 const Stats = () => {
   const stats = [
     {
@@ -21,6 +23,7 @@ const Stats = () => {
       value: "1400 +",
     },
   ];
+  <Loading/>
   return (
     <div className="  justify-center sm:hidden   ">
       <div className="grid md:hidden lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-14 m-10 bg-[#1d344a] rounded-[50px] px-24">

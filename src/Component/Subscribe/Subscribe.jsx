@@ -1,4 +1,7 @@
+import Loading from "../Loading/Loading";
+
 const Subscribe = () => {
+    <Loading/>
     return (
         <div className="sm:hidden border-solid border-[#e5e7eb] bg-[#1d344a] flex flex-col lg:flex-row md:flex-row justify-center gap-12 h-auto items-center border lg:w-3/4 py-10 my-10 mx-auto rounded">
             <div className="flex flex-col items-start">

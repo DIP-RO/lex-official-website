@@ -1,9 +1,11 @@
 import format from 'date-fns/format';
+import Loading from '../../Component/Loading/Loading';
 
 const ReviewCard = ({review}) => {
     
     const createdAt = new Date(review.createdAt);
     const formattedDate = format(createdAt, 'dd MMM yyyy, HH:mm:ss');
+    <Loading/>
     return (
         <div className="card lg:w-96 bg-gray-900 shadow-xl sm:max-w-sm">
             <div className="card-body">

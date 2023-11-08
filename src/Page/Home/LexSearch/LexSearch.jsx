@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Loading from '../../../Component/Loading/Loading';
 
 const LexSearch = () => {
     const [data, setData] = useState([]);
@@ -23,7 +24,7 @@ const LexSearch = () => {
         setRecord(Result.slice(0, 5));
 
     };
-
+<Loading/>
     return (
 
         <div className="xl:hidden md:hidden lg:hidden max-w-sm flex justify-center items-center gap-5 p-5">

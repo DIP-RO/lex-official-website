@@ -1,9 +1,11 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Context/UserContext";
+import Loading from "../../Component/Loading/Loading";
 
 const Profile = () => {
 
-    const {user} = useContext(AuthContext);
+    const { user } = useContext(AuthContext);
+    <Loading/>
     return (
         <div className=" flex-1 justify-center items-center m-20">
             {

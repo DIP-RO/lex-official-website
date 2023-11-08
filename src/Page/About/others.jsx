@@ -9,7 +9,9 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { ScrollRestoration } from "react-router-dom";
+import Loading from "../../Component/Loading/Loading";
 const Others = () => {
+  <Loading/>
   return (
     <div className="bg-slate-900 py-10">
       <div className=" ">

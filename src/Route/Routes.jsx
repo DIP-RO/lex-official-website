@@ -22,6 +22,16 @@ import LexAi from "../Page/LexAi/LexAi";
 import LawDEtails from "../Page/LawDetails/LawDEtails";
 import BlogDetails from "../Page/BlogDetails/BlogDetails";
 import Registration from "../Page/Registration/Registration";
+import AddBlog from "../Page/DashboardHome/AddBlog";
+import AddService from "../Page/DashboardHome/AddService";
+import AllTestimonial from "../Page/DashboardHome/AllTestimonial";
+import AllAppointment from "../Page/DashboardHome/AllAppointment";
+import AddLawyer from "../Page/DashboardHome/AddLawyer";
+import AllUser from "../Page/DashboardHome/AllUser";
+import Service from "../Component/Service/Service";
+import AllServices from "../Component/Service/AllServices";
+
+import DownloadAppPage from "../Component/DownLoadApp/DownloadAppPage";
 
  export const router = createBrowserRouter([
     {
@@ -35,6 +45,10 @@ import Registration from "../Page/Registration/Registration";
         {
           path: "/login",
           element:<Login></Login>,
+        },
+        {
+          path: "/app",
+          element:<DownloadAppPage></DownloadAppPage>,
         },
         {
           path: "/signup",
@@ -73,6 +87,14 @@ import Registration from "../Page/Registration/Registration";
           element:<ComingSoon></ComingSoon>,
         },
         {
+          path: "/service",
+          element:<Service></Service>,
+        },
+        {
+          path: "/allService",
+          element:<AllServices></AllServices>,
+        },
+        {
           path: "/blog-details/:id",
           element:<BlogDetails></BlogDetails>,
         },
@@ -95,6 +117,30 @@ import Registration from "../Page/Registration/Registration";
         {
           path: "/dashboard/booking",
           element: <Booking></Booking>,
+        },
+        {
+          path: "/dashboard/allAppointment",
+          element: <AllAppointment></AllAppointment>,
+        },
+        {
+          path: "/dashboard/addLawyer",
+          element: <AddLawyer></AddLawyer>,
+        },
+        {
+          path: "/dashboard/allUser",
+          element: <AllUser></AllUser>
+        },
+        {
+          path: "/dashboard/allTestimonial",
+          element: <AllTestimonial></AllTestimonial>,
+        },
+        {
+          path: "/dashboard/addService",
+          element: <AddService></AddService>,
+        },
+        {
+          path: "/dashboard/addBlog",
+          element: <AddBlog></AddBlog>,
         },
         {
           path: "/dashboard/message",

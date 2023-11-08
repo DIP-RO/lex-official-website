@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Context/UserContext";
+import Loading from "../Loading/Loading";
 
 const ButtomNavigation = () => {
   const Menus = [
@@ -15,7 +16,7 @@ const ButtomNavigation = () => {
   
   const { logOut } = useContext(AuthContext);
   
-
+<Loading/>
   return (
     <div className="fixed bottom-0 ml-2 z-10 xl:hidden lg:hidden md:hidden max-w-sm bg-white max-h-[4.4rem] rounded-t-xl">
       <div className="px-6">

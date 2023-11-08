@@ -9,20 +9,22 @@ import Moto from "../../Component/Moto/Moto";
 import Testymony from "../../Component/Testymony/Testymony";
 import Lawyer from "../../Component/Lawyer/Lawyer";
 import Service from "../../Component/Service/Service";
-import FacebookMsg from "../../Component/FacebookMsg/FacebookMsg";
+
 import Question from "../../Component/Question/Question";
 import LexSearch from "./LexSearch/LexSearch";
 import Introducing from "./Introducing/Introducing";
+import Loading from "../../Component/Loading/Loading";
 
 
 const Home = () => {
+    <Loading/>
     return (
         <div className="sm:max-w-sm">
             <LexSearch></LexSearch>
             <Introducing></Introducing>
             <Carusel ></Carusel>
             <Moto></Moto>
-            <FacebookMsg></FacebookMsg>
+            {/* <FacebookMsg></FacebookMsg> */}
             <Whylex></Whylex>
             <Service></Service>
             <Stats></Stats>

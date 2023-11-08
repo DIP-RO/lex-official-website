@@ -1,6 +1,8 @@
+import Loading from "../../../Component/Loading/Loading";
 
 
 const Introducing = () => {
+    <Loading/>
     return (
         <div className="xl:hidden md:hidden lg:hidden max-w-sm mb-5">
             <h1 className="text-xl font-bold text-black ml-12">Introducing Lex.Ai</h1>

@@ -1,7 +1,9 @@
+import Loading from "../../Component/Loading/Loading";
 import Question from "../../Component/Question/Question";
 import ContactModal from "./ContactModal/ContactModal";
 
 const Contact = () => {
+  <Loading/>
   return (
     <div className="flex flex-col items-center">
       <Question></Question>

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useContext } from "react";
 import { AuthContext } from "../../Context/UserContext";
 import axios from 'axios';
+import Loading from "../Loading/Loading";
 
 const Navbar = () => {
 
@@ -43,7 +44,7 @@ const Navbar = () => {
         setRecord(Result.slice(0, 5));
 
     };
-
+<Loading/>
     return (
         <div className="navbar sticky z-10 top-0 bg-[#1d344a] sm:hidden  flex justify-between border-b-2 border-black ">
             <div className="navbar-start  ">
@@ -57,6 +58,7 @@ const Navbar = () => {
                         <li className='text-white '><Link to="/blog">Blog</Link></li>
                         <li className='text-white '><Link to="/about">About</Link></li>
                         <li className='text-white '><Link to="/contact">Contact</Link></li>
+                        <li className='text-white '><Link to="/app">App</Link></li>
                         <>
                             <li>
                                 <Link to="/dashboard/profile"><div className="w-10 rounded-full ">
@@ -77,6 +79,7 @@ const Navbar = () => {
                     <li className='text-white mt-5 '><Link to="/blog">{t("Home.Navbar.blog")}</Link></li>
                     <li className='text-white mt-5 '><Link to="/about">{t("Home.Navbar.about")}</Link></li>
                     <li className='text-white mt-5 mr-14'><Link to="/contact">{t("Home.Navbar.contact")}</Link></li>
+                    <li className='text-white mt-5 mr-14'><Link to="/app">App</Link></li>
                     <li>
                         <select className="bg-white mt-2 h-12 hover:bg-white rounded-full" onChange={onChangeLang}>
                             <option value="en" className="lang">
