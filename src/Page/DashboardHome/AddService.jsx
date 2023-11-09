@@ -1,66 +1,24 @@
 
 import { useNavigate } from 'react-router-dom';
 import swal from 'sweetalert';
-import UserContext, { AuthContext } from '../../Context/UserContext';
 import { useForm } from 'react-hook-form';
 
 const AddService = () => {
-    const {Refresh , setRefresh} = UserContext(AuthContext);
     
     const { register, formState: { errors }, handleSubmit } = useForm();
     const navigate = useNavigate();
     const handleAddProduct = (data) => {
-        const image = data.img[0];
-        const formData = new FormData();
-        formData.append('image',image);
-        const url = 'https://api.imgbb.com/1/upload?key=6b61fed2ade9e1cb6596b28fb4315762';
-        fetch(url, {
-            method: 'POST',
-            body:formData
-        })
-        .then(res => res.json())
-        .then(imageData => {
-
-            if(imageData.success){
-                const product = {
-                    name : data.name,
-                    mail : data.mail,
-                    price : data.price,
-                    rating : data.rating,
-                    description : data.description,
-                    img : imageData.data.url
-
-
-                }
-                console.log(product);
-
-
-                fetch('https://pro-motors.vercel.app/product', {
-                    method: 'POST',
-                    headers: {
-                       'content-type': 'application/json',
-                       authorization : ` Bearer ${localStorage.getItem('secret-token')}`
-                    },
-                    body: JSON.stringify(product)
-                })
-                    .then(res => res.json())
-                    .then(result => {
-                        console.log(result);
-                        setRefresh(!Refresh);
-                        swal({
-                          title: "Good job!",
-                          text: `${data.name} is successfully added`,
-                          icon: "success",
-                          button: "DONE",
-                        });
-                        navigate('/allService');
-                    })
-                    .catch(err => console.error(err));
-            }
-        });
+      swal({
+        title: "Good job!",
+        text: `${data.name} is successfully added`,
+        icon: "success",
+        button: "DONE",
+      });
+      navigate('/');
+      }
         
 
-    }    
+      
     return (
         <div className="flex justify-center  bg-gray-900">
         <div className="card w-96  bg-gray-900 shadow-2xl ">

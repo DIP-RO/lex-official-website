@@ -1,67 +1,66 @@
 
 import { useForm } from 'react-hook-form';
-import UserContext, { AuthContext } from '../../Context/UserContext';
+import { AuthContext } from '../../Context/UserContext';
 import { useNavigate } from 'react-router-dom';
 import swal from 'sweetalert';
+import { useContext } from 'react';
 
 
 const AddLawyer = () => {
-    const {user ,Refresh , setRefresh} = UserContext(AuthContext);
+    const {user } = useContext(AuthContext);
     
     const { register, formState: { errors }, handleSubmit } = useForm();
     const navigate = useNavigate();
     const handleAddProduct = (data) => {
-        const image = data.img[0];
-        const formData = new FormData();
-        formData.append('image',image);
-        const url = 'https://api.imgbb.com/1/upload?key=6b61fed2ade9e1cb6596b28fb4315762';
-        fetch(url, {
-            method: 'POST',
-            body:formData
-        })
-        .then(res => res.json())
-        .then(imageData => {
+      const image = data.img[0];
+      const formData = new FormData();
+      formData.append('image', image);
+      const url = 'https://api.imgbb.com/1/upload?key=1658aafd65aea72c0b966711f995e311';
+      fetch(url, {
+          method: 'POST',
+          body: formData
+      })
+          .then(res => res.json())
+          .then(imageData => {
 
-            if(imageData.success){
-                const product = {
-                    name : data.name,
-                    mail : data.mail,
-                    price : data.price,
-                    rating : data.rating,
-                    description : data.description,
-                    img : imageData.data.url
+              console.log(imageData);
+
+              if (imageData.success) {
+                  const information = {
+                    name: data.name,
+                    specialization: data.specialization,
+                    description: user.description,
+                      image: imageData.data.url,
+                      role: 'LAWYER'
+                  }
+                  console.log(information);
 
 
-                }
-                console.log(product);
+                  fetch('http://localhost:5000/api/v1/lawyers/lawyers', {
+                      method: 'POST',
+                      headers: {
+                          'content-type': 'application/json',
+                      },
+                      body: JSON.stringify(information)
+                  })
+                      .then(res => res.json())
+                      .then(result => {
+                          console.log(result);
+                          swal({
+                              title: "Good job!",
+                              text: `${data.name} is successfully added`,
+                              icon: "success",
+                              button: "DONE",
+                          });
+                          navigate('/');
+                      })
+                      .catch(err => console.error(err));
+              }
+          });
 
 
-                fetch('https://pro-motors.vercel.app/product', {
-                    method: 'POST',
-                    headers: {
-                       'content-type': 'application/json',
-                       authorization : ` Bearer ${localStorage.getItem('secret-token')}`
-                    },
-                    body: JSON.stringify(product)
-                })
-                    .then(res => res.json())
-                    .then(result => {
-                        console.log(result);
-                        setRefresh(!Refresh);
-                        swal({
-                          title: "Good job!",
-                          text: `${data.name} is successfully added`,
-                          icon: "success",
-                          button: "DONE",
-                        });
-                        navigate('/allService');
-                    })
-                    .catch(err => console.error(err));
-            }
-        });
-        
-
-    }    
+  }
+ 
     return (
         <div className="flex justify-center  bg-gray-900">
       <div className="card w-96  bg-gray-900 shadow-2xl ">
@@ -73,14 +72,6 @@ const AddLawyer = () => {
           >
             <input
               className="input input-bordered w-full max-w-xs mt-6"
-              value={user?.email}
-              {...register("mail")}
-                            type="text"
-                            placeholder='e-mail'
-            />
-            <br />
-            <input
-              className="input input-bordered w-full max-w-xs mt-6"
               placeholder="name"
               {...register("name", {
                 required: "name is required",
@@ -90,25 +81,15 @@ const AddLawyer = () => {
             {errors.name && (
               <p className="text-red-600">{errors.name?.message}</p>
             )}
-            <br />
+            <br />       
             <input
               className="input input-bordered w-full max-w-xs mt-6"
-              placeholder="price"
-              {...register("price", { required: "price is required" })}
+              placeholder="specialization"
+              {...register("specialization", { required: "specialization is required" })}
               type="text"
             />
-            {errors.price && (
-              <p className="text-red-600">{errors.price?.message}</p>
-            )}
-            <br />         
-            <input
-              className="input input-bordered w-full max-w-xs mt-6"
-              placeholder="rating"
-              {...register("rating", { required: "rating is required" })}
-              type="text"
-            />
-            {errors.rating && (
-              <p className="text-red-600">{errors.rating?.message}</p>
+            {errors.specialization && (
+              <p className="text-red-600">{errors.specialization?.message}</p>
             )}
             <br />
             <input

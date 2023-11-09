@@ -78,7 +78,7 @@ const Navbar = () => {
                     <li className='text-white mt-5'><Link to="/appointment">{t("Home.Navbar.appointment")}</Link></li>
                     <li className='text-white mt-5 '><Link to="/blog">{t("Home.Navbar.blog")}</Link></li>
                     <li className='text-white mt-5 '><Link to="/about">{t("Home.Navbar.about")}</Link></li>
-                    <li className='text-white mt-5 mr-14'><Link to="/contact">{t("Home.Navbar.contact")}</Link></li>
+                    <li className='text-white mt-5 '><Link to="/contact">{t("Home.Navbar.contact")}</Link></li>
                     <li className='text-white mt-5 mr-14'><Link to="/app">App</Link></li>
                     <li>
                         <select className="bg-white mt-2 h-12 hover:bg-white rounded-full" onChange={onChangeLang}>

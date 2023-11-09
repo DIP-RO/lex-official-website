@@ -32,7 +32,7 @@ const Registration = () => {
                         phoneNumber: data.phone,
                         address: data.address,
                         image: imageData.data.url,
-                        role: 'USER'
+                        role: data.role,
                     }
                     console.log(information);
 
@@ -49,7 +49,7 @@ const Registration = () => {
                             console.log(result);
                             swal({
                                 title: "Good job!",
-                                text: `${data.firstName , data.lastName} is successfully added`,
+                                text: `${data.firstName, data.lastName} is successfully added`,
                                 icon: "success",
                                 button: "DONE",
                             });
@@ -123,6 +123,13 @@ const Registration = () => {
                             <p className="text-red-600">{errors.phone?.message}</p>
                         )}
                         <br />
+                        <select className="select mt-6  select-bordered w-full max-w-xs" {...register("role", { required: "role is required" })}>
+                            <option disabled selected>ROLE</option>
+                            <option>USER</option>
+                            <option>LAWYER</option>
+                            
+                        </select>
+                        {errors.role && <p className='text-red-600'>{errors.role?.message}</p>}
                         <input
                             className="input input-bordered w-full max-w-xs mt-6"
                             placeholder="address"

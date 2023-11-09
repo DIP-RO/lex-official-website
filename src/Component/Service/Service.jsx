@@ -67,7 +67,7 @@ const Service = () => {
                 ))}
             </div>
             <div className="flex justify-center ">
-            <button className="btn bg-[#1d344a] lg:mt-2 md:mt-8 hover:bg-[#1d344a] mt-[-75px] text-white my-10">
+            <button className="btn bg-[#1d344a] lg:mt-2 md:mt-8 hover:bg-[#1d344a]  text-white my-10">
                 <Link to="/allService">SEE MORE</Link>
             </button>
             </div>

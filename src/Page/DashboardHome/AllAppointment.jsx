@@ -23,21 +23,13 @@ const AllAppointment = () => {
         "Sample text. Click to select the text box. Click again or double click to start editing the text.",
       image:
         "https://i.ibb.co/VTsfwGj/fpdl-in-person-wearing-glasses-500927-366-normal.jpg",
-    },
-    {
-      id: 4,
-      name: "Nat Reynolds",
-      message:
-        "Sample text. Click to select the text box. Click again or double click to start editing the text.",
-      image:
-        "https://i.ibb.co/VTsfwGj/fpdl-in-person-wearing-glasses-500927-366-normal.jpg",
-    },
+    }
   ];
   return (
     <div className="flex flex-col justify-center items-center my-20 sm:hidden">
       <div>
-        <h1 className="text-center text-4xl font-['Orbitron'] font-bold leading-[14px] uppercase text-white w-min">
-          All Appointment
+        <h1 className="text-center text-2xl font-['Orbitron'] font-bold  uppercase text-white ">
+          All   Appointment
         </h1>
       </div>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-14 md:gap-6 mt-10 ">

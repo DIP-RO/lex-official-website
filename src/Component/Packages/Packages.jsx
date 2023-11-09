@@ -40,7 +40,7 @@ const Packages = () => {
                 <h1 className="card-title text-white">{data.title}</h1>
                 <p className="text-white">If a dog chews shoes whose shoes does he choose?</p>
                 <div className="card-actions">
-                  <button className="btn bg-[#1d344a] lg:mt-2 md:mt-8 hover:bg-[#1d344a] mt-[-75px] text-white my-10">
+                  <button className="btn bg-[#1d344a] lg:mt-2 md:mt-8 hover:bg-[#1d344a]  text-white my-10">
                     <Link to="/coming-soon">View Details</Link>
                   </button>
                 </div>

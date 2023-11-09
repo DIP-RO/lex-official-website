@@ -73,9 +73,64 @@ const LawyerDetails = () => {
 
     const handleAppointment = () => {
 
+        const AppointmentData = {
+            userName: user.displayName,
+            userEmail: user.email,
+            image: lawyer.image,
+            specialization: lawyer.specialization,
+            lawyerId: lawyer._id,
+            lawyerName: lawyer.name,
+        }
+        fetch('http://localhost:5000/api/v1/appointments/appointments', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json',
+            },
+            body: JSON.stringify(AppointmentData)
+        })
+            .then(res => res.json())
+            .then(result => {
+                console.log(result);
+                swal({
+                    title: "Good job!",
+                    text: `${ lawyer.name} is successfully added`,
+                    icon: "success",
+                    button: "DONE",
+                });
+                
+            })
+            .catch(err => console.error(err));
+
     };
     const handleBookmark = () => {
-        
+
+        const BookmarkData = {
+            userEmail: user.email,
+            image: lawyer.image,
+            specialization: lawyer.specialization,
+            name: lawyer.name,
+            LawyerId: lawyer._id,
+        }
+
+        fetch('http://localhost:5000/api/v1/bookmarks/bookmarks', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json',
+            },
+            body: JSON.stringify(BookmarkData)
+        })
+            .then(res => res.json())
+            .then(result => {
+                console.log(result);
+                swal({
+                    title: "Good job!",
+                    text: `${ lawyer.name} is successfully added`,
+                    icon: "success",
+                    button: "DONE",
+                });
+                
+            })
+            .catch(err => console.error(err));
     };
 
 <Loading/>
