@@ -29,7 +29,7 @@ const Lawyer = () => {
                 ))}
             </div>
             <button className="btn bg-[#1d344a] lg:mt-2 md:mt-8 hover:bg-[#1d344a] mt-[-75px] text-white my-10">
-                SEE MORE
+                <Link to="/appointment">SEE MORE</Link>
             </button>
         </div>
     );
