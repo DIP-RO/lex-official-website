@@ -39,7 +39,7 @@ const Carusel = () => {
                        </div>
                     </div>
                     <div className="w-1/2 justify-center mt-20 ml-10">
-                    <img src=" https://i.ibb.co/FVzDkDc/image.png" alt="" className="w-96" />
+                    <img src="https://i.ibb.co/Nrng37j/lawyers.png" alt="" className="w-96" />
                     </div>
                 </div>
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">

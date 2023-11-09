@@ -36,7 +36,7 @@ const AllAppointment = () => {
   return (
     <div className="flex flex-col justify-center items-center my-20 sm:hidden">
       <div>
-        <h1 className="text-center text-4xl font-['Orbitron'] font-bold leading-[14px] uppercase text-white w-min">
+        <h1 className="text-center text-4xl font-['Orbitron'] font-bold leading-[14px] uppercase text-white ">
           All Appointment
         </h1>
       </div>
