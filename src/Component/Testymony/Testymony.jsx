@@ -12,19 +12,19 @@ const Testymony = () => {
             id: 2,
             name: 'Olga Jhonso',
             message: 'Sample text. Click to select the text box. Click again or double click to start editing the text.',
-            image: "https://i.ibb.co/VTsfwGj/fpdl-in-person-wearing-glasses-500927-366-normal.jpg",
+            image: "https://i.ibb.co/9qYCL6s/fpdl-in-realistic-3d-cartoon-character-with-glasses-beard-899449.jpg",
         },
         {
             id: 3,
             name: 'Paul Smith',
             message: 'Sample text. Click to select the text box. Click again or double click to start editing the text.',
-            image: "https://i.ibb.co/VTsfwGj/fpdl-in-person-wearing-glasses-500927-366-normal.jpg",
+            image: "https://i.ibb.co/2YSrjK7/fpdl-in-gothic-style-girl-cartoon-character-3d-beautiful-black-hair.jpg",
         },
         {
             id: 4,
             name: 'Nat Reynolds',
             message: 'Sample text. Click to select the text box. Click again or double click to start editing the text.',
-            image: "https://i.ibb.co/VTsfwGj/fpdl-in-person-wearing-glasses-500927-366-normal.jpg",
+            image: "https://i.ibb.co/Ky2pcj9/3d-portrait-businessman-23-2150793877.jpg",
         },
     ];
 <Loading/>
